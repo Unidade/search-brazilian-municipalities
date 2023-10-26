@@ -4,7 +4,7 @@ Este projeto é um mapa interativo de todos os municipios do Brasil, utiliza os 
 
 ## Tecnologias
 
-Foi utilizado Redis GEOSHAPE Polygon introduzido no Redis Stack 7.2 para realizar o armanenamento das coordenadas dos estados brasileiros e realizar buscar dado um poligono qualquer.
+Foi utilizado Redis GEOSHAPE Polygon introduzido no Redis Stack 7.2 para realizar o armanenamento das coordenadas dos estados brasileiros e realizar buscar municipios que estão dentro de dado um poligono qualquer
 
 ### Backend
 
