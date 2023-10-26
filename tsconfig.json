@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    // "outFile": "./",                                  /* Specify a file that bundles all outputs into one JavaScript file. If 'declaration' is true, also designates a file that bundles all .d.ts output. */
+    "outDir": "./dist" /* Specify an output folder for all emitted files. */,
+
+    // "preserveSymlinks": true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
+
+    /* Type Checking */
+    "strict": true /* Enable all strict type-checking options. */,
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "module": "ESNext",
+    "target": "ESNext",
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "baseUrl": "."
+  }
+}
