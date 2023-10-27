@@ -6,7 +6,7 @@ import {
 } from "../municipio.js"
 
 import wellknown, { GeoJSONFeature } from "wellknown"
-import { RedisClientType, redisClient } from "../../infraestructure/redis.js"
+import { RedisClientType, redisClient } from "../../infrastructure/redis.js"
 import { searchReplyToJson } from "../../utils/searchReply.js"
 import { convertGeoJsonToPolygon } from "../../utils/format.js"
 
