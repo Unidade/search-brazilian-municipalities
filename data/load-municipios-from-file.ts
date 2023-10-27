@@ -4,7 +4,7 @@ import ndjson from "ndjson"
 
 import { hashFile } from "../utils/hashFile.js"
 import { Municipio, newMunicipio } from "../model/municipio.js"
-import { QUITREDIS, redisClient } from "../infraestructure/redis.js"
+import { redisClient } from "../infraestructure/redis.js"
 import { getMunicipioUseCase } from "../app/usecase.js"
 
 export async function loadMunicipiosDataFromFile(path: string) {
@@ -25,7 +25,7 @@ export async function loadMunicipiosDataFromFile(path: string) {
   } catch (error) {
     console.error(`Error loading data from file ${path}:`, error)
   } finally {
-    await QUITREDIS()
+    await redisClient.quit()
   }
 }
 

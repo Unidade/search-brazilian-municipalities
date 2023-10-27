@@ -1,3 +1,5 @@
+import type { SearchReply } from "redis"
+
 /**
  * Convert redis search reply to a json object
  * @param searchReply

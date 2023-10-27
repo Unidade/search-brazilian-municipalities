@@ -82,11 +82,15 @@ components:
 
     municipio:
       type: object
-      allOf:
-        - $ref: "#/components/schemas/geojson"
-        - $ref: "#/components/schemas/_municipio"
+      properties:
+        geometry:
+          type: object
+          $ref: "#/components/schemas/geojson"
+        properties:
+          type: object
+          $ref: "#/components/schemas/properties_municipio"
 
-    _municipio:
+    properties_municipio:
       type: object
       properties:
         CD_MUN:

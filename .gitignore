@@ -3,3 +3,4 @@ node_modules/
 .presentation
 dist/
 .devcontainer/
+logs/

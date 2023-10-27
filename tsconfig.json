@@ -10,12 +10,8 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
 
     "esModuleInterop": true,
-    "moduleResolution": "Node",
-    "module": "ESNext",
-    "target": "ESNext",
-    "paths": {
-      "@/*": ["./*"]
-    },
-    "baseUrl": "."
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "target": "ESNext"
   }
 }

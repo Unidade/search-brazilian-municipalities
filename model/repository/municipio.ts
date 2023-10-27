@@ -1,4 +1,3 @@
-import { GeoJSONFeature } from "wellknown"
 import {
   Municipio,
   MunicipioRepository,
@@ -6,9 +5,9 @@ import {
   newMunicipio,
 } from "../municipio.js"
 
-import wellknown from "wellknown"
+import wellknown, { GeoJSONFeature } from "wellknown"
 import { RedisClientType, redisClient } from "../../infraestructure/redis.js"
-import { searchReplyToJson } from "@/utils/searchReply.js"
+import { searchReplyToJson } from "../../utils/searchReply.js"
 import { convertGeoJsonToPolygon } from "../../utils/format.js"
 
 type RedisMuncipio = {
